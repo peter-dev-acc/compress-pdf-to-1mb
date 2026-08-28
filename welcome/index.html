@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compress PDF to 1MB | Welcome</title>
+  <link rel="icon" href="Tmp/icon128.png" type="image/png" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #000;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 220, 140, 0.55), transparent 28%),
+        radial-gradient(circle at 88% 12%, rgba(160, 200, 255, 0.5), transparent 30%),
+        radial-gradient(circle at 78% 88%, rgba(255, 180, 190, 0.45), transparent 32%),
+        linear-gradient(180deg, #eef4ff 0%, #f7fbff 100%);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 30px 20px 48px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 25.2px;
+      font-weight: 700;
+      line-height: 1.23;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.55;
+    }
+    .steps {
+      margin-bottom: 8px;
+    }
+    .step-emoji {
+      display: inline-block;
+      font-style: normal;
+      margin-right: 6px;
+      animation: bounce 1.8s ease-in-out infinite;
+    }
+    .shot {
+      display: block;
+      width: 100%;
+      max-width: 684px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 14px 36px rgba(70, 110, 170, 0.18);
+    }
+    .shot:first-of-type { animation: fromLeft 0.85s cubic-bezier(.2, .8, .2, 1) both; }
+    .shot:last-of-type { animation: fromRight 0.85s cubic-bezier(.2, .8, .2, 1) 0.2s both; }
+    .step-2 {
+      margin-top: 23px;
+      margin-bottom: 8px;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes fromLeft {
+      from { opacity: 0; transform: translateX(-70px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fromRight {
+      from { opacity: 0; transform: translateX(70px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 21.6px; }
+      p { font-size: 14.4px; line-height: 1.45; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .shot, .step-emoji { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>🎈 Compress PDF to 1MB is Ready! 🎈</h1>
+    <p class="steps"><span class="step-emoji" aria-hidden="true">🧩</span>1. Click the Extensions icon (1) in your browser's top-right. Click the pin icon (2) next to Compress PDF to 1MB.</p>
+    <img class="shot" src="1.jpg" alt="Pin Compress PDF to 1MB from the Extensions menu" />
+    <p class="step-2"><span class="step-emoji" aria-hidden="true">📌</span>2. Click the Compress PDF to 1MB icon (3) in your toolbar to begin.</p>
+    <img class="shot" src="2.jpg" alt="Open Compress PDF to 1MB from the browser toolbar" />
+  </main>
+</body>
+</html>
